@@ -3,7 +3,7 @@ angular.module('app').controller('MapCtrl', function($rootScope, $scope, $http) 
 
   $scope.loadMap = function() {
     L.mapbox.accessToken = 'pk.eyJ1Ijoiam9udGF5ZXNwIiwiYSI6InVJa25QU2sifQ.qL2m4ZMKnuiU5qf3z8GcIw';
-    $scope.map = L.mapbox.map('map', 'examples.map-i86nkdio').setView([31.8, 35], 7);
+    $scope.map = L.mapbox.map('map', 'examples.map-i86nkdio');
     $scope.loadLayer();
   }
 
