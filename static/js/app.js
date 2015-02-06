@@ -14,24 +14,11 @@ angular.module('app', ['infinite-scroll', 'ngAnimate', 'ngRoute', 'ngResource', 
 })
 
 angular.module('app').controller('AppCtrl', function($document, $rootScope, $location, $scope, $http, $timeout) {
-
   $scope.themes = [
-  {'id': 'default', 'name': 'Default'},
-  {'id': 'solarized-light', 'name': 'Solarized Light'},
-  {'id': 'solarized-dark', 'name': 'Solarized Dark'}
+    {'id': 'default', 'name': 'Default'},
+    {'id': 'solarized-light', 'name': 'Solarized Light'},
+    {'id': 'solarized-dark', 'name': 'Solarized Dark'}
   ]
-
-  $scope.extensions = [
-  {'id': 'book', 'name': 'Book'},
-  {'id': 'map', 'name': 'Map'}
-  ]
-
-  $scope.extension = $scope.extensions[0]
-
-  $scope.configure = {
-    'font_size': 18,
-    'theme': 'default'
-  }
 
   $scope.setExtension = function(extension) {
     $scope.extension = extension;

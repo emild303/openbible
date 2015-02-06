@@ -5,6 +5,7 @@
   margin-top: 100px;
   padding-top: 0px;
   z-index:0;
+  font-size: 18px;
 }
 
 @media (max-width:748px) {
