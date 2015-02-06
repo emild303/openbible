@@ -8,6 +8,15 @@ html, body {
 	max-width: 750px;
 }
 
+.jumbotron .btn {
+	padding: 14px 24px;
+	font-size: 21px;
+}
+
+.navbar {
+	margin-bottom:0px;
+}
+
 .navbar-default {
 	background:rgba(248, 248, 248, 0.75);
 	border-style:none;
