@@ -4,6 +4,10 @@ html, body {
 	font-family:"Noto Serif";
 }
 
+a {
+	color:#268bd2;
+}
+
 .container {
 	max-width: 750px;
 }
