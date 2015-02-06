@@ -3,12 +3,15 @@ angular.module('app', ['infinite-scroll', 'ngAnimate', 'ngRoute', 'ngResource', 
 .config(function($routeProvider) {
   $routeProvider
     .when('/book', {
-      templateUrl:'/static/extensions/book/book.html',
+      templateUrl:'/static/pages/book/book.html',
       controller:'BookCtrl',
     })
     .when('/map', {
-      templateUrl:'/static/extensions/map/map.html',
+      templateUrl:'/static/pages/map/map.html',
       controller:'MapCtrl',
+    })
+    .when('/', {
+      templateUrl:'/static/partials/land.html'
     })
     .otherwise({redirectTo: '/book'});
 })
