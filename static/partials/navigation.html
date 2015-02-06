@@ -1,0 +1,5 @@
+<div class="aside">
+  <div class="list-group">
+    <a class="list-group-item" ng-class="{'active': book == b}" href="javascript:void(0)" ng-click="$hide() || setBook(b)" ng-repeat="b in books">{{b.title|uppercase}}</a>
+  </div>
+</div>

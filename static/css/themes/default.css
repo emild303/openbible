@@ -1,0 +1,58 @@
+.book {
+  line-height: 1.65em;
+  font-weight: 400;
+  color:rgba(0,0,0,.87);
+  margin-top: 100px;
+  padding-top: 0px;
+  z-index:0;
+}
+
+@media (max-width:748px) {
+  .book {
+    margin-top: 68px;
+  }
+}
+
+.book .chapter {
+  display: block;
+  width:50px;
+  text-align:right;
+  font-weight: 700;
+  color:#cb4b16;
+  margin-left:-65px;
+  float:left;
+}
+
+.book title {
+  display: none;
+  margin-bottom:10px;
+  xfont-size:.75em;
+  font-weight:400;
+  xcolor:#b58900;
+  xfont-style:italic;
+}
+
+.book divineName {
+  font-variant: small-caps;
+}
+
+.book note {
+  display: none;
+}
+
+.book .x-end-paragraph {
+  margin-bottom:9px;
+}
+
+.book .x-end-paragraph:after {
+  xcontent:"\a\a";
+  xwhite-space: pre;
+}
+
+.book .q:before {
+  content: "\""
+}
+
+.book .q:after {
+  content: ""
+}

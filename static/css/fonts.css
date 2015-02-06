@@ -1,0 +1,22 @@
+.paleohebrew {
+  font-family: 'paleohebrew'
+}
+
+@font-face {
+  font-family: 'paleohebrew';
+  src: url('/static/fonts/evyohep.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.protosinaitic {
+  font-family: 'protosinaitic'
+}
+
+@font-face {
+  font-family: 'protosinaitic';
+  src: url('/static/fonts/ancheb.ttf');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,145 @@
+html, body {
+	-webkit-font-smoothing: subpixel-antialiased;
+	background:#fff;
+	font-family:"Noto Serif";
+}
+
+.container {
+	max-width: 750px;
+}
+
+.navbar-default {
+	background:rgba(248, 248, 248, 0.75);
+	border-style:none;
+}
+
+.navbar-item {
+	position:relative;
+	display:block;
+	width:50px;
+	height:50px;
+	text-align:center;
+	padding-top:16px;
+	padding-bottom:16px;
+	line-height:18px;
+	font-size:18px;
+	color: rgba(0,0,0,.87);
+	margin-bottom:-1px; /* FIXME */
+}
+
+.navbar-item:hover{
+	color:#cb4b16;
+	background:none;
+}
+
+.navbar-item-left {
+	padding-left:0px;
+	margin-left:0px;
+	width:auto;
+	margin-right:30px;
+	float:left;
+}
+
+.navbar-item-right {
+	float:right;
+}
+
+.active, .active:hover {
+	color:rgba(0,0,0,.54);
+	background:#fff;
+	border-style:solid;
+	border-color:rgba(0,0,0,.54);
+	border-width:0px 0px 0px 0px;
+}
+
+.book-title {
+	text-align:center;
+	font-size:18px;
+	line-height:18px;
+	padding-top:16px;
+	padding-bottom:16px;
+	color:#cb4b16;
+	font-weight:700;
+	letter-spacing:3px;
+}
+
+.aside {
+	-webkit-overflow-scrolling: touch;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	z-index: 1049;
+	overflow-y: scroll;
+	background:#fff;
+	xpadding-left:50px;
+	text-align: center;
+}
+
+@media (max-width:991px) {
+	.aside {
+		min-width: 240px
+	}
+}
+
+.modal-backdrop.am-fade, .aside-backdrop.am-fade {
+	background:none;
+}
+
+.aside .list-group-item.active, .aside .list-group-item.active:focus, .aside .list-group-item.active:hover {
+	background:none;
+	color:rgba(0,0,0,.87);
+}
+
+.aside.left {
+	right: auto;
+	left: 0;
+}
+
+.aside-backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+}
+
+.list-group-item:first-child {
+	border-radius:0px;
+	border-top-width:0px;
+}
+
+.list-group {
+	margin-bottom:0px;
+}
+
+.aside .list-group {
+	background:none;
+}
+
+.aside .list-group-item {
+	background:none;
+	font-size:18px;
+	border-style:none;
+	line-height:1.5em;
+	font-family: inherit;
+	letter-spacing:2px;
+}
+
+.aside a.list-group-item:focus, .aside a.list-group-item:hover {
+	background:#fafafa;
+}
+
+.aside a.list-group-item {
+	color:rgba(0,0,0,.54);
+	font-weight:700;
+	line-height:18px;
+	padding-top:16px;
+	padding-bottom:16px;
+}
+
+.aside-item {
+	display:block;
+	font-size:14px;
+	line-height:1.4em;
+}

@@ -1,0 +1,17 @@
+body, .aside, .aside-content {
+  background: #073642;
+}
+
+.navbar {
+  background: #002b36;
+  box-shadow: none;
+  border-style: none;
+}
+
+.navbar .navbar-nav>li>a, .navbar .navbar-brand {
+  color: #268bd2;
+}
+
+.book {
+  color: #93a1a1;
+}
