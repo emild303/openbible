@@ -95,10 +95,15 @@ h3 {
 .footer {
 	background:#424242;
 	font-family:'Noto Sans';
-	color:#fff;
-	text-align:center;
-	padding-top:15px;
-	padding-bottom:15px;
+	color:rgba(255,255,255,0.87);
+	xtext-align:center;
+	padding-top:50px;
+}
+
+.footer a {
+	color:rgba(255,255,255,0.87);
+	xcolor:#fff;
+	font-weight:700;
 }
 
 .aside {
