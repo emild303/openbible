@@ -9,8 +9,15 @@ a {
 }
 
 h3 {
-	font-family:'Noto Sans';
+	xfont-family:'Noto Sans';
 	margin-top:0px;
+	letter-spacing:2px;
+	color:rgba(0,0,0,.54);
+	font-weight:bold;
+}
+
+p {
+	font-family: 'Noto Sans'
 }
 
 .container {

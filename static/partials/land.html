@@ -22,14 +22,14 @@
 <div class="container" style="text-align:center;margin-top:50px;">
   <div class="row">
     <div class="col-sm-6" style="margin-bottom:50px;">
-      <h3>Explore</h3>
+      <h3>EXPLORE</h3>
       <p class="lead">
         Explore biblical events on a map.
       </p>
     </div>
 
     <div class="col-sm-6" style="margin-bottom:50px;">
-      <h3>Themeable</h3>
+      <h3>THEMEABLE</h3>
       <p class="lead">
         Select a theme for optimal readability in any enviornment.
       </p>
@@ -38,14 +38,14 @@
 
   <div class="row">
     <div class="col-sm-6" style="margin-bottom:50px;">
-      <h3>Contribute</h3>
+      <h3>OPEN SOURCE</h3>
       <p class="lead">
         Open Bible is open source, which means you can take a look under the hood and contribute.
       </p>
     </div>
 
     <div class="col-sm-6" style="margin-bottom:50px;">
-      <h3>Sword Project</h3>
+      <h3>SWORD PROJECT</h3>
       <p class="lead">
         Built on the modules provided by Sword Project.
       </p>
@@ -73,9 +73,25 @@
         <p class="lead" style="ztext-align:center">
           <h4 style="color:rgba(255,255,255,0.54);letter-spacing:2px;font-weight:700">SHARE</h4>
           <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://openbible.io" data-size="large" data-hashtags="openbible">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><br/>
-
         </p>
+      </div>
+    </div>
+    <div class="row" style="padding-bottom:50px">
+      <div class="col-sm-12">
+        <h4 style="color:rgba(255,255,255,0.54);letter-spacing:2px;font-weight:700">ACTIVITY</h4>
+        <p class="lastcommit" style="font-size:18px">Searching..</p>
       </div>
     </div>
   </div>
 </div>
+
+<script>
+$.getJSON("https://api.github.com/repos/openbible/openbible/commits", function(data) {
+  var m_names = new Array("January", "February", "March",
+"April", "May", "June", "July", "August", "September",
+"October", "November", "December");
+  var d = new Date(data[0].commit.committer.date)
+  var date = m_names[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear()
+  $('.lastcommit').text(data[0].commit.committer.name + " commited on " + date + ": " + data[0].commit.message);
+});
+</script>
