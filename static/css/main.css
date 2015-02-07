@@ -2,22 +2,24 @@ html, body {
 	-webkit-font-smoothing: subpixel-antialiased;
 	background:#fff;
 	font-family:"Noto Serif";
+	color:rgba(0,0,0,.87);
 }
 
 a {
 	color:#268bd2;
 }
 
-h3 {
-	xfont-family:'Noto Sans';
+h4 {
+	font-family:'Noto Sans';
 	margin-top:0px;
 	letter-spacing:2px;
 	color:rgba(0,0,0,.54);
 	font-weight:bold;
 }
 
-p {
-	font-family: 'Noto Sans'
+p  {
+	font-family: 'Noto Sans';
+	font-size:18px;
 }
 
 .container {
