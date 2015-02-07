@@ -8,6 +8,11 @@ a {
 	color:#268bd2;
 }
 
+h3 {
+	font-family:'Noto Sans';
+	margin-top:0px;
+}
+
 .container {
 	max-width: 750px;
 }
@@ -15,6 +20,17 @@ a {
 .jumbotron .btn {
 	padding: 14px 24px;
 	font-size: 21px;
+}
+
+.btn-jumbo {
+	border-style:none;
+	background:#268bd2;
+	font-family:'Noto Sans';
+	margin-top:50px;
+}
+
+.lead {
+	margin-bottom:0px;
 }
 
 .navbar {
@@ -59,7 +75,7 @@ a {
 
 .active, .active:hover {
 	color:rgba(0,0,0,.54);
-	background:#fff;
+	background:rgba(255,255,255,.75);
 	border-style:solid;
 	border-color:rgba(0,0,0,.54);
 	border-width:0px 0px 0px 0px;
@@ -74,6 +90,15 @@ a {
 	color:#cb4b16;
 	font-weight:700;
 	letter-spacing:3px;
+}
+
+.footer {
+	background:#424242;
+	font-family:'Noto Sans';
+	color:#fff;
+	text-align:center;
+	padding-top:15px;
+	padding-bottom:15px;
 }
 
 .aside {
