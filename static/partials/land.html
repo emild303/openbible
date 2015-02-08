@@ -58,28 +58,34 @@
     <div class="row">
       <div class="col-sm-4" style="padding-bottom:50px">
         <h4 style="color:rgba(255,255,255,0.54);letter-spacing:2px;font-weight:700">ABOUT</h4>
-        <p style="font-size:18px">
+        <p style="font-size:15px">
           Open Bible was designed and created by <a href="http://twitter.com/jontayesp">Jonathan Esposito</a>.
         </p>
       </div>
       <div class="col-sm-4" style="padding-bottom:50px">
         <h4 style="color:rgba(255,255,255,0.54);letter-spacing:2px;font-weight:700">HELP</h4>
-        <p style="font-size:18px">
+        <p style="font-size:15px">
           Contribute with <a href="http://github.com/openbible/openbible">GitHub</a><br/>
           Support with <a href="http://gratipay.com/jontayesp">Gratipay</a>
         </p>
       </div>
+
       <div class="col-sm-4" style="padding-bottom:50px">
-        <p class="lead" style="ztext-align:center">
-          <h4 style="color:rgba(255,255,255,0.54);letter-spacing:2px;font-weight:700">SHARE</h4>
-          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://openbible.io" data-size="large" data-hashtags="openbible">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><br/>
+        <h4 style="color:rgba(255,255,255,0.54);letter-spacing:2px;font-weight:700">ACTIVITY</h4>
+        <p>
+          <span class="lastcommitdate" style="font-size:15px">Searching..</span><br/>
+          <span class="lastcommitmessage" style="font-size:15px"></span>
         </p>
       </div>
     </div>
     <div class="row" style="padding-bottom:50px">
-      <div class="col-sm-12">
-        <h4 style="color:rgba(255,255,255,0.54);letter-spacing:2px;font-weight:700">ACTIVITY</h4>
-        <p class="lastcommit" style="font-size:18px">Searching..</p>
+      <div class="col-sm-12" style="padding-bottom:50px">
+        <p class="lead" style="ztext-align:center">
+          <h4 style="color:rgba(255,255,255,0.54);letter-spacing:2px;font-weight:700;margin-bottom:18px">SHARE</h4>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://openbible.io" data-text="Open Bible: An open Bible designed for reading." data-via="jontayesp" data-size="large" data-hashtags="openbible">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+          <a href="https://twitter.com/openbible" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @openbible</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </p>
       </div>
     </div>
   </div>
@@ -92,6 +98,7 @@ $.getJSON("https://api.github.com/repos/openbible/openbible/commits", function(d
 "October", "November", "December");
   var d = new Date(data[0].commit.committer.date)
   var date = m_names[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear()
-  $('.lastcommit').text(data[0].commit.committer.name + " commited on " + date + ": " + data[0].commit.message);
+  $('.lastcommitdate').text(date);
+  $('.lastcommitmessage').text(data[0].commit.committer.name + " commited: " + data[0].commit.message);
 });
 </script>

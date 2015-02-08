@@ -115,10 +115,10 @@ p  {
 }
 
 .footer {
-	background:#424242;
+	background:#073642;
 	font-family:'Noto Sans';
 	color:rgba(255,255,255,0.87);
-	xtext-align:center;
+	text-align:center;
 	padding-top:50px;
 }
 
