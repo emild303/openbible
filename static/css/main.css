@@ -10,7 +10,6 @@ a {
 }
 
 h4 {
-	font-family:'Noto Sans';
 	margin-top:0px;
 	letter-spacing:2px;
 	color:rgba(0,0,0,.54);
@@ -36,6 +35,8 @@ p  {
 	background:#cb4b16;
 	font-family:'Noto Sans';
 	margin-top:50px;
+	font-weight:700;
+	letter-spacing:2px;
 }
 
 .btn-jumbo:hover {
