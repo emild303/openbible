@@ -17,7 +17,10 @@ def root():
 @app.route('/proxy', methods=['POST'])
 def proxy():
   data = json.loads(flask.request.data)
-  html = ZModule(data['module']).all_verses_in_book(data['book'], data['chapter'])
+  try:
+      html = ZModule(data['module']).all_verses_in_book(data['book'], data['chapter'])
+  except Exception as e:
+      print e
   return flask.jsonify({'html': html})
 
 if __name__ == "__main__":

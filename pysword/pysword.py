@@ -54,11 +54,11 @@ class ZModule(object):
     (verse_to_buf, buf_to_loc, text)
     """
     try:
-      v_path = os.path.join(self.path, base, '%s.bz%s' % (testament, 'v')
-      s_path = os.path.join(self.path, base, '%s.bz%s' % (testament, 's')
-      z_path = os.path.join(self.path, base, '%s.bz%s' % (testament, 'z')
+      v_path = os.path.join(self.path, self.module, '%s.bz%s' % (testament, 'v'))
+      s_path = os.path.join(self.path, self.module, '%s.bz%s' % (testament, 's'))
+      z_path = os.path.join(self.path, self.module, '%s.bz%s' % (testament, 'z'))
       return [open(name, 'rb') for name in (v_path, s_path, z_path)]
-  except OSError:
+    except OSError:
       return []
 
   def text_for_index(self, testament, index):
@@ -93,7 +93,7 @@ class ZModule(object):
   def all_verses_in_testament(self, testament):
     books = testaments[testament]
     for book in books:
-      for verse in self.all_verses_in_book(book):-
+      for verse in self.all_verses_in_book(book):
         yield verse
 
   def all_verses_in_book(self, book, chapter):
