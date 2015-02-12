@@ -21,7 +21,7 @@ p  {
 	font-size:18px;
 }
 
-.container {
+.container, .jumbotron .container {
 	max-width: 750px;
 }
 
