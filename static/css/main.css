@@ -6,19 +6,31 @@ html, body {
 }
 
 a {
-	color:#268bd2;
+	color:#cb4b16;
 }
 
-h4 {
+h4, h5 {
 	margin-top:0px;
 	letter-spacing:2px;
-	color:rgba(0,0,0,.54);
+	color:rgba(7,  54,  66, 1);;
 	font-weight:bold;
+	font-size:21px;
+	font-family: 'Noto Serif';
 }
 
 p  {
 	font-family: 'Noto Sans';
 	font-size:18px;
+}
+
+.jumbotron {
+	padding-top:25px;
+	padding-bottom:75px;
+	margin-bottom:0px;
+}
+
+.jumbotron .h1, .jumbotron h1 {
+	color: rgba(7,  54,  66, 1);
 }
 
 .container, .jumbotron .container {
@@ -36,7 +48,8 @@ p  {
 	font-family:'Noto Sans';
 	margin-top:50px;
 	font-weight:700;
-	letter-spacing:2px;
+	letter-spacing:1px;
+	color:#fff;
 }
 
 .btn-jumbo:hover {
@@ -53,8 +66,6 @@ p  {
 				font-size: 21px
 		}
 }
-
-
 
 .navbar {
 	margin-bottom:0px;
@@ -75,9 +86,11 @@ p  {
 	padding-bottom:16px;
 	line-height:18px;
 	font-size:18px;
-	color: rgba(0,0,0,.87);
+	color: rgba(0,  43,  54,.87);
 	margin-bottom:-1px; /* FIXME */
 }
+
+
 
 .navbar-item:hover{
 	color:#cb4b16;
@@ -97,7 +110,7 @@ p  {
 }
 
 .active, .active:hover {
-	color:rgba(0,0,0,.54);
+	color:rgba(0, 43,  54,.54);
 	background:rgba(255,255,255,.75);
 	border-style:solid;
 	border-color:rgba(0,0,0,.54);
@@ -118,13 +131,17 @@ p  {
 .footer {
 	background:#073642;
 	font-family:'Noto Sans';
-	color:rgba(255,255,255,0.87);
+	color:rgba(255,255,255,.54);
 	text-align:center;
 	padding-top:50px;
 }
 
+h4 {
+	color:inherit;
+}
+
 .footer a {
-	color:rgba(255,255,255,0.87);
+	xcolor:rgba(255,255,255,0.87);
 	xcolor:#fff;
 	font-weight:700;
 }
