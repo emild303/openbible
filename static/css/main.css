@@ -11,16 +11,25 @@ a {
 
 h4, h5 {
 	margin-top:0px;
-	letter-spacing:2px;
+	letter-spacing:1px;
 	color:rgba(7,  54,  66, 1);;
 	font-weight:bold;
-	font-size:21px;
+	font-size:28px;
+	font-family: 'Noto Serif';
+}
+
+h3 {
+	margin-top:0px;
+	letter-spacing:2px;
+	color:rgba(0,0,0,.54);
+	font-weight:bold;
+	font-size:18px;
 	font-family: 'Noto Serif';
 }
 
 p  {
 	font-family: 'Noto Sans';
-	font-size:18px;
+	font-size:21px;
 }
 
 .jumbotron {
@@ -30,7 +39,8 @@ p  {
 }
 
 .jumbotron .h1, .jumbotron h1 {
-	color: rgba(7,  54,  66, 1);
+	color: #424242;
+	font-weight:700;
 }
 
 .container, .jumbotron .container {
@@ -45,7 +55,7 @@ p  {
 .btn-jumbo {
 	border-style:none;
 	background:#cb4b16;
-	font-family:'Noto Sans';
+	xfont-family:'Noto Sans';
 	margin-top:50px;
 	font-weight:700;
 	letter-spacing:1px;
@@ -129,9 +139,9 @@ p  {
 }
 
 .footer {
-	background:#073642;
+	background:#fdf6e3;
 	font-family:'Noto Sans';
-	color:rgba(255,255,255,.54);
+	color:rgba(0,0,0,.54);
 	text-align:center;
 	padding-top:50px;
 }
