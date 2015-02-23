@@ -9,7 +9,7 @@ a {
 	color:#cb4b16;
 }
 
-h4, h5 {
+h4 {
 	margin-top:0px;
 	letter-spacing:1px;
 	color:rgba(7,  54,  66, 1);;
@@ -18,33 +18,26 @@ h4, h5 {
 	font-family: 'Noto Serif';
 }
 
-h3 {
-	margin-top:0px;
-	letter-spacing:2px;
-	color:rgba(0,0,0,.54);
-	font-weight:bold;
-	font-size:18px;
-	font-family: 'Noto Serif';
-}
-
 p  {
 	font-family: 'Noto Sans';
 	font-size:21px;
 }
 
+.container, .jumbotron .container {
+	max-width: 750px;
+}
+
 .jumbotron {
-	padding-top:25px;
+	background:#002b36;
+	padding-top:50px;
 	padding-bottom:75px;
 	margin-bottom:0px;
+	text-align:center;
 }
 
 .jumbotron .h1, .jumbotron h1 {
-	color: #424242;
+	color: #fff;
 	font-weight:700;
-}
-
-.container, .jumbotron .container {
-	max-width: 750px;
 }
 
 .jumbotron .btn {
@@ -52,10 +45,31 @@ p  {
 	font-size: 21px;
 }
 
+.section-social {
+	background:#073642;
+	padding-bottom:25px;
+	padding-top:25px;
+	text-align:center;
+}
+
+.section-about {
+	background:#fafafa;
+	color:#424242;
+	text-align:center;
+	padding-top:75px;
+}
+
+.section-footer {
+	background:#fff;
+	color:rgba(0,0,0,.54);
+	text-align:center;
+	padding-top:50px;
+}
+
 .btn-jumbo {
 	border-style:none;
 	background:#cb4b16;
-	xfont-family:'Noto Sans';
+	font-family:'Noto Sans';
 	margin-top:50px;
 	font-weight:700;
 	letter-spacing:1px;
@@ -136,14 +150,6 @@ p  {
 	color:#cb4b16;
 	font-weight:700;
 	letter-spacing:3px;
-}
-
-.footer {
-	background:#fdf6e3;
-	font-family:'Noto Sans';
-	color:rgba(0,0,0,.54);
-	text-align:center;
-	padding-top:50px;
 }
 
 h4 {
