@@ -10,12 +10,12 @@ a {
 }
 
 h4 {
+	font-family: 'Noto Serif';
+	color:#073642;
 	margin-top:0px;
 	letter-spacing:1px;
-	color:rgba(7,  54,  66, 1);;
 	font-weight:bold;
 	font-size:28px;
-	font-family: 'Noto Serif';
 }
 
 p  {
@@ -45,6 +45,20 @@ p  {
 	font-size: 21px;
 }
 
+.btn-jumbo {
+	border-style:none;
+	background:#cb4b16;
+	font-family:'Noto Sans';
+	margin-top:50px;
+	font-weight:700;
+	letter-spacing:1px;
+	color:#fff;
+}
+
+.btn-jumbo:hover {
+	background:#cb4b16;
+}
+
 .section-social {
 	background:#073642;
 	padding-bottom:25px;
@@ -61,34 +75,13 @@ p  {
 
 .section-footer {
 	background:#fff;
-	color:rgba(0,0,0,.54);
+	color:#586e75;
 	text-align:center;
 	padding-top:50px;
 }
 
-.btn-jumbo {
-	border-style:none;
-	background:#cb4b16;
-	font-family:'Noto Sans';
-	margin-top:50px;
-	font-weight:700;
-	letter-spacing:1px;
-	color:#fff;
-}
-
-.btn-jumbo:hover {
-	background:#cb4b16;
-}
-
-.lead {
-	margin-bottom:0px;
-	font-size:18px;
-}
-
-@media (min-width:768px) {
-		.lead {
-				font-size: 21px
-		}
+.section-footer h4 {
+	color:#586e75;
 }
 
 .navbar {
@@ -113,8 +106,6 @@ p  {
 	color: rgba(0,  43,  54,.87);
 	margin-bottom:-1px; /* FIXME */
 }
-
-
 
 .navbar-item:hover{
 	color:#cb4b16;
@@ -150,16 +141,6 @@ p  {
 	color:#cb4b16;
 	font-weight:700;
 	letter-spacing:3px;
-}
-
-h4 {
-	color:inherit;
-}
-
-.footer a {
-	xcolor:rgba(255,255,255,0.87);
-	xcolor:#fff;
-	font-weight:700;
 }
 
 .aside {
