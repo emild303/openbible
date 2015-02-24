@@ -28,7 +28,7 @@ p  {
 }
 
 .jumbotron {
-	background:#002b36;
+	background:#073642 ;
 	padding-top:50px;
 	padding-bottom:75px;
 	margin-bottom:0px;
@@ -47,12 +47,12 @@ p  {
 
 .btn-jumbo, .jumbotron .btn, .btn-jumbo:hover {
 	border-style:none;
-	background:#fff;
+	background:#657b83;
 	font-family:'Noto Sans';
 	margin-top:50px;
 	font-weight:700;
 	letter-spacing:1px;
-	color:#073642;
+	color:#fff;
 	font-size:21px;
 }
 
@@ -220,3 +220,4 @@ p  {
 	font-size:14px;
 	line-height:1.4em;
 }
+
