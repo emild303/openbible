@@ -5,7 +5,7 @@ import os
 import flask
 import requests
 
-from pysword import Module
+from sword import Module
 
 
 app = flask.Flask(__name__)
