@@ -57,7 +57,7 @@ p  {
 }
 
 .section-social {
-	background:#073642;
+	background:rgba(248, 248, 248, 0.75);
 	padding-bottom:25px;
 	padding-top:25px;
 	text-align:center;
@@ -78,7 +78,7 @@ p  {
 }
 
 .section-footer h4 {
-	color:#586e75;
+	color:rgba(248, 248, 248, 0.75);
 }
 
 .navbar {
