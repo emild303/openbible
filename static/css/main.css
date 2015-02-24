@@ -64,21 +64,21 @@ p  {
 }
 
 .section-about {
-	background:#fafafa;
+	background:#fff;
 	color:#424242;
 	text-align:center;
 	padding-top:75px;
 }
 
 .section-footer {
-	background:#fff;
+	background:rgba(248, 248, 248, 0.75);
 	color:#586e75;
 	text-align:center;
 	padding-top:50px;
 }
 
 .section-footer h4 {
-	color:rgba(248, 248, 248, 0.75);
+	color:#586e75;
 }
 
 .navbar {
