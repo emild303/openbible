@@ -5,7 +5,7 @@ import os
 import flask
 import requests
 
-from pysword.pysword import ZModule
+from pysword import Module
 
 
 app = flask.Flask(__name__)
@@ -18,7 +18,7 @@ def root():
 def proxy():
   data = json.loads(flask.request.data)
   try:
-      html = ZModule(data['module']).all_verses_in_book(data['book'], data['chapter'])
+      html = Module(data['module']).read(data['book'], data['chapter'])
   except Exception as e:
       print e
   return flask.jsonify({'html': html})
