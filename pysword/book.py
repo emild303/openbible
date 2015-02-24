@@ -1,4 +1,6 @@
 
+# FIXME: statically generate data so we don't have to recaculate
+
 class Books(object):
 
   def __init__(self):
