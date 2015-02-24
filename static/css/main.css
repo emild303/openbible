@@ -6,7 +6,7 @@ html, body {
 }
 
 a {
-	color:#cb4b16;
+	color:#268bd2;
 }
 
 h4 {
@@ -45,18 +45,15 @@ p  {
 	font-size: 21px;
 }
 
-.btn-jumbo {
+.btn-jumbo, .jumbotron .btn, .btn-jumbo:hover {
 	border-style:none;
-	background:#cb4b16;
+	background:#fff;
 	font-family:'Noto Sans';
 	margin-top:50px;
 	font-weight:700;
 	letter-spacing:1px;
-	color:#fff;
-}
-
-.btn-jumbo:hover {
-	background:#cb4b16;
+	color:#073642;
+	font-size:25px;
 }
 
 .section-social {
