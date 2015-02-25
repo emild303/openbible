@@ -6,7 +6,7 @@ html, body {
 }
 
 a {
-	color:#2aa198;
+	color:#268bd2;
 	font-weight:bold;
 }
 
@@ -30,7 +30,7 @@ p  {
 }
 
 .jumbotron {
-	background:#073642;
+	background:#002b36;
 	padding-top:50px;
 	padding-bottom:75px;
 	margin-bottom:0px;
@@ -49,7 +49,7 @@ p  {
 
 .btn-jumbo, .jumbotron .btn, .btn-jumbo:hover {
 	border-style:none;
-	background:#2aa198;
+	background:#268bd2;
 	font-family:'Noto Sans';
 	margin-top:50px;
 	font-weight:700;
@@ -118,7 +118,7 @@ p  {
 }
 
 .navbar-item:hover{
-	color:#2aa198;
+	color:#268bd2;
 	background:none;
 }
 
