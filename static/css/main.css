@@ -10,8 +10,8 @@ a {
 }
 
 h4 {
-	font-family: 'Noto Serif';
-	color:#073642;
+	font-family: 'Noto Sans';
+	color:#586e75;
 	margin-top:0px;
 	letter-spacing:1px;
 	font-weight:bold;
@@ -21,6 +21,7 @@ h4 {
 p  {
 	font-family: 'Noto Sans';
 	font-size:21px;
+	color:rgba(0,0,0,.87);
 }
 
 .container, .jumbotron .container {
@@ -28,7 +29,7 @@ p  {
 }
 
 .jumbotron {
-	background:#073642 ;
+	background:#073642;
 	padding-top:50px;
 	padding-bottom:75px;
 	margin-bottom:0px;
@@ -47,19 +48,19 @@ p  {
 
 .btn-jumbo, .jumbotron .btn, .btn-jumbo:hover {
 	border-style:none;
-	background:#fff;
+	background:#2aa198;
 	font-family:'Noto Sans';
 	margin-top:50px;
 	font-weight:700;
 	letter-spacing:1px;
-	color:#073642;
+	color:#fff;
 	font-size:21px;
 }
 
 .section-social {
-	background:rgba(248, 248, 248, 0.75);
+	background:rgba(245	,245,245,.75);
 	padding-bottom:25px;
-	padding-top:25px;
+	padding-top:0px;
 	text-align:center;
 }
 
@@ -71,7 +72,7 @@ p  {
 }
 
 .section-footer {
-	background:rgba(248, 248, 248, 0.75);
+	background:rgba(245,245,245,.75);
 	color:#586e75;
 	text-align:center;
 	padding-top:50px;
@@ -81,12 +82,23 @@ p  {
 	color:#586e75;
 }
 
+.book-title {
+	text-align:center;
+	font-size:18px;
+	line-height:18px;
+	padding-top:16px;
+	padding-bottom:16px;
+	color:#586e75;
+	font-weight:700;
+	letter-spacing:3px;
+}
+
 .navbar {
 	margin-bottom:0px;
 }
 
 .navbar-default {
-	background:rgba(248, 248, 248, 0.75);
+	background:rgba(245	,245,245,.75);
 	border-style:none;
 }
 
@@ -100,12 +112,12 @@ p  {
 	padding-bottom:16px;
 	line-height:18px;
 	font-size:18px;
-	color: rgba(0,  43,  54,.87);
+	color: #93a1a1;
 	margin-bottom:-1px; /* FIXME */
 }
 
 .navbar-item:hover{
-	color:#cb4b16;
+	color:#2aa198;
 	background:none;
 }
 
@@ -122,22 +134,11 @@ p  {
 }
 
 .active, .active:hover {
-	color:rgba(0, 43,  54,.54);
-	background:rgba(255,255,255,.75);
+	color:#586e75;
+	background:rgba(38, 139 210,.75);
 	border-style:solid;
 	border-color:rgba(0,0,0,.54);
 	border-width:0px 0px 0px 0px;
-}
-
-.book-title {
-	text-align:center;
-	font-size:18px;
-	line-height:18px;
-	padding-top:16px;
-	padding-bottom:16px;
-	color:#cb4b16;
-	font-weight:700;
-	letter-spacing:3px;
 }
 
 .aside {
@@ -220,5 +221,3 @@ p  {
 	font-size:14px;
 	line-height:1.4em;
 }
-
-
