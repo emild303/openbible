@@ -12,7 +12,7 @@ a {
 
 h4 {
 	font-family: 'Noto Sans';
-	color:#586e75;
+	color:#073642;
 	margin-top:0px;
 	letter-spacing:1px;
 	font-weight:bold;
@@ -30,7 +30,7 @@ p  {
 }
 
 .jumbotron {
-	background:#eee8d5;
+	background:#eee;
 	padding-top:50px;
 	padding-bottom:75px;
 	margin-bottom:0px;
@@ -38,7 +38,7 @@ p  {
 }
 
 .jumbotron .h1, .jumbotron h1 {
-	color: #073642;
+	color: #002b36;
 	font-weight:400;
 }
 
@@ -77,10 +77,6 @@ p  {
 	color:#586e75;
 	text-align:center;
 	padding-top:50px;
-}
-
-.section-footer h4 {
-	color:#586e75;
 }
 
 .book-title {
