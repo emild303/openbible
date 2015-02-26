@@ -12,8 +12,8 @@ a {
 h4 {
 	color:#073642;
 	margin-top:0px;
-	font-weight:400;
-	font-size:36px;
+	font-weight:700;
+	font-size:28px;
 }
 
 p  {
@@ -27,15 +27,15 @@ p  {
 }
 
 .jumbotron {
-	background:#073642;
-	padding-top:75px;
-	padding-bottom:75px;
+	background:#002b36;
+	padding-top:50px;
+	padding-bottom:100px;
 	margin-bottom:0px;
 	text-align:center;
 }
 
 .jumbotron .h1, .jumbotron h1 {
-	color: #fff;
+	color: #fdf6e3;
 	font-weight:700;
 	margin:0px;
 	padding:0px;
@@ -48,13 +48,13 @@ p  {
 
 .btn-jumbo, .jumbotron .btn, .btn-jumbo:hover {
 	border-style:none;
-	background:#fff;
+	background:#2aa198;
 	border-color:#586e75;
 	font-family:'Noto Sans';
 	margin-top:50px;
 	font-weight:700;
 	letter-spacing:1px;
-	color:#073642;
+	color:#fdf6e3;
 	font-size:21px;
 }
 
@@ -86,7 +86,7 @@ p  {
 	line-height:18px;
 	padding-top:16px;
 	padding-bottom:16px;
-	color:#586e75;
+	color:#2aa198;
 	font-weight:700;
 	letter-spacing:3px;
 }
@@ -111,7 +111,7 @@ p  {
 	padding-bottom:16px;
 	line-height:18px;
 	font-size:18px;
-	color: #93a1a1;
+	color: #073642;
 	margin-bottom:-1px; /* FIXME */
 }
 
@@ -133,7 +133,7 @@ p  {
 }
 
 .active, .active:hover {
-	color:#586e75;
+	color:#2aa198;
 	background:rgba(38, 139 210,.75);
 	border-style:solid;
 	border-color:rgba(0,0,0,.54);
