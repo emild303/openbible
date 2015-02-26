@@ -2,23 +2,22 @@
   <div class="container">
     <div style="left:0px;right:0px;position:absolute">
       <div class="book-title">
-        {{book.title|uppercase}}
+        {{book.title|uppercase}} &nbsp; {{module.title}}
       </div>
     </div>
 
-    <a class="navbar-item navbar-item-left" href="javascript:void(0)" data-template="/static/partials/navigation.html" data-placement="left" data-animation="am-slide-left" bs-aside="aside" data-container="body">
-      <span class="glyphicon glyphicon-menu-hamburger"></span>
-    </a>
-    <a class="navbar-item navbar-item-left" href="javascript:void(0)">
-      <span class="glyphicon glyphicon-cog"></span>
-    </a>
 
-    <a class="navbar-item navbar-item-right" href="#/map" ng-class="{active: page=='map'}">
-      <span class="glyphicon glyphicon-globe"></span>
-    </a>
-
-    <a class="navbar-item navbar-item-right" href="#/book" ng-class="{active: page=='book'}">
+    <a class="navbar-item navbar-item-left" href="#/book" ng-class="{active: page=='book'}">
       <span class="glyphicon glyphicon-book"></span>
+    </a>
+
+
+        <a class="navbar-item navbar-item-left" href="#/map" ng-class="{active: page=='map'}">
+          <span class="glyphicon glyphicon-globe"></span>
+        </a>
+
+    <a class="navbar-item navbar-item-right" href="javascript:void(0)">
+      <span class="glyphicon glyphicon-cog"></span>
     </a>
   </div>
 </header>
