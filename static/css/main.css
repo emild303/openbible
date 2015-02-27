@@ -14,13 +14,12 @@ h2 {
 	color:#073642;
 	margin-top:0px;
 	font-weight:700;
-	font-size:36px;
+	xfont-size:36px;
 }
 
 p  {
 	color:rgba(0,0,0,.87);
 	line-height:1.5em;
-	font-size:23px;
 }
 
 .container, .jumbotron .container {
@@ -74,12 +73,10 @@ p  {
 .section-footer {
 	color:rgba(0,0,0,.54);
 	text-align:left;
-	padding-top:50px;
 }
 
 .section-social {
 	padding-bottom:50px;
-	padding-top:0px;
 	text-align:left;
 }
 
@@ -92,7 +89,7 @@ p  {
 	padding-bottom:15px;
 	color:#073642;
 	font-weight:700;
-	letter-spacing:2px;
+	letter-spacing:3px;
 }
 
 .navbar {
