@@ -48,13 +48,13 @@ p  {
 
 .btn-jumbo, .jumbotron .btn, .btn-jumbo:hover {
 	border-style:none;
-	background:#fff;
+	background:#268bd2;
 	border-color:#fff;
 	font-family:'Noto Sans';
 	margin-top:50px;
 	font-weight:700;
 	letter-spacing:0px;
-	color:#073642;
+	color:#fff;
 	font-size:28px;
 }
 
