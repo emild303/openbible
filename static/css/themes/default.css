@@ -1,11 +1,11 @@
 .book {
-  line-height: 1.65em;
+  line-height: 1.5em;
   font-weight: 400;
   color:rgba(0,0,0,.87);
   margin-top: 100px;
   padding-top: 0px;
   z-index:0;
-  font-size: 19px;
+  font-size: 20px;
 }
 
 @media (max-width:748px) {
