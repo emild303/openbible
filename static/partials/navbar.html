@@ -2,7 +2,7 @@
   <div class="container">
     <div style="left:0px;right:0px;position:absolute">
       <div class="book-title">
-        {{book.title|uppercase}} &nbsp; {{module.title}}
+        {{book.title.substring(0, 3)|uppercase}} &nbsp; {{module.title}}
       </div>
     </div>
 
@@ -12,9 +12,9 @@
     </a>
 
 
-        <a class="navbar-item navbar-item-left" href="#/map" ng-class="{active: page=='map'}">
-          <span class="glyphicon glyphicon-globe"></span>
-        </a>
+    <a class="navbar-item navbar-item-left" href="#/map" ng-class="{active: page=='map'}">
+      <span class="glyphicon glyphicon-globe"></span>
+    </a>
 
     <a class="navbar-item navbar-item-right" href="javascript:void(0)">
       <span class="glyphicon glyphicon-cog"></span>
