@@ -13,17 +13,17 @@ a, a:hover {
 
 h2 {
 	color:rgba(0,0,0,.8);
-	margin-top:25px;
+	margin-top:0px;
 	font-weight:700;
 	font-size:40px;
 	margin-bottom:50px;
-	text-align:center;
 }
 
 p  {
-	color:rgba(0,0,0,.9);
+	xcolor:rgba(0,0,0,.87);
 	line-height:1.5em;
-	font-size:22px;
+	font-size:24px;
+	margin-bottom:0px;
 }
 
 .container, .jumbotron .container {
@@ -31,28 +31,31 @@ p  {
 }
 
 .jumbotron {
-	background:#212121;
+	background:#fff;
 	padding-left:0px;
 	padding-right:0px;
-	padding-top:75px;
-	padding-bottom:75px;
-	text-align:center;
+	margin-top:50px;
+	margin-bottom:50px;
+	padding-top:0px;
+	padding-bottom:0px;
+	text-align:left;
 	border-style:solid;
 	border-color:#424242;
 	border-width:0px 0px 0px 0px;
 }
 
 .jumbotron .h1, .jumbotron h1 {
-	color:#fff;
+	color:#073642;
 	font-weight:700;
-	margin-top:0px;
-	padding-top:0px;
-	font-size:65px;
+	margin:0px;
+	padding:0px;
+	font-size:60px;
 }
 
 .book-title {
+	color:#586e75;
 	text-align:center;
-	font-size:20px;
+	font-size:21px;
 	line-height:20px;
 	padding-top:15px;
 	padding-bottom:15px;
@@ -65,22 +68,23 @@ p  {
 }
 
 .navbar-default {
-	background:rgba(255	,255,255, .75);
+	background:rgba(255	,255,255, .9);
 	border-style:none;
 	border-radius:0px;
 }
 
 .navbar-item {
+	color:#586e75;
 	position:relative;
 	display:block;
 	width:auto;
-	height:50px;
+	xheight:50px;
 	text-align:center;
-	padding-top:15px;
-	padding-bottom:15px;
-	line-height:20px;
-	font-size:20px;
-	text-decoration:none;
+	xpadding-top:15px;
+	xpadding-bottom:15px;
+	line-height:50px;
+	font-size:21px;
+	xtext-decoration:none;
 	margin-bottom:-1px; /* FIXME */
 }
 
@@ -100,16 +104,19 @@ p  {
 	width:auto;
 }
 
+.navbar-item:hover {
+	color:#268bd2;
+}
+
 .active, .active:hover {
-	background:#424242;
+	color:#586e75;
+	background:#eee8d5;
 	border-style:solid;
 	border-color:rgba(0,0,0,.8);
 	border-width:0px 0px 0px 0px;
 }
 
-.active:hover, .navbar-item:hover {
-	color:auto;
-}
+
 
 .aside {
 	-webkit-overflow-scrolling: touch;

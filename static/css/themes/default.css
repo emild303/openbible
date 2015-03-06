@@ -1,7 +1,7 @@
 .book {
   line-height: 1.5em;
   font-weight: 400;
-  color:rgba(0,0,0,.87);
+  xcolor:#002b36;
   margin-top: 100px;
   padding-top: 0px;
   z-index:0;
@@ -21,6 +21,7 @@
   font-weight: 700;
   margin-left:-65px;
   float:left;
+  color:#586e75;
 }
 
 .book title {
