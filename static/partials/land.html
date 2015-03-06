@@ -1,43 +1,52 @@
-<header headroom tolerance="5" offset="50" classes='{"initial":"animated","pinned":"slideDown","unpinned":"slideUp","top":"headroom--top","notTop":"headroom--not-top"}' class="navbar navbar-default xnavbar-fixed-top" style="background:#fff;xdisplay:none">
+<header headroom tolerance="5" offset="50" classes='{"initial":"animated","pinned":"slideDown","unpinned":"slideUp","top":"headroom--top","notTop":"headroom--not-top"}' class="navbar navbar-default xnavbar-fixed-top" ng-init="page=null;">
   <div class="container">
+    <div style="left:0px;right:0px;position:absolute">
+      <div class="book-title">
+        <a href="#" style="text-decoration:none;color:#586e75">START READING</a>
+      </div>
+    </div>
+
 
     <a class="navbar-item navbar-item-left" href="#/book" ng-class="{active: page=='book'}">
-      <span class="glyphicon glyphicon-book"  style="color:#586e75"></span>
+      <span class="glyphicon glyphicon-book"></span>
     </a>
 
 
     <a class="navbar-item navbar-item-left" href="#/map" ng-class="{active: page=='map'}">
-      <span class="glyphicon glyphicon-globe" style="color:#586e75"></span>
+      <span class="glyphicon glyphicon-globe"></span>
     </a>
 
     <a class="navbar-item navbar-item-right" href="javascript:void(0)">
-      <span class="glyphicon glyphicon-cog" style="color:#586e75"></span>
+      <span class="glyphicon glyphicon-cog"></span>
     </a>
   </div>
 </header>
 
+
 <div class="jumbotron">
   <div class="container">
-    <h1><a href="#/book" xclass="btn btn-primary btn-lg">Open Bible</a> An modern Bible designed for reading and exploring.</h1>
+    <h1 style="font-size:75px"><a href="#/book" xclass="btn btn-primary btn-lg">Open Bible</a></h1><br/>
+    <h1>A modern app designed for reading and exploring the Bible.</h1>
+
   </div>
 </div>
 
-<div class="container" style="text-align:left;margin-top:0px;margin-bottom:50px">
+<div class="container" style="text-align:center;margin-top:0px;margin-bottom:50px">
   <div class="row">
     <div class="col-sm-6" style="margin-bottom:50px;">
       <p>
-        Open Bible was created to read like a book. Choose a theme to match your lighting and enjoy reading without hurting your eyes.
+        Open Bible was built to read like a book. Choose a theme to match your lighting and enjoy longform reading without hurting your eyes. The typography was carefully selected to provide the optimal reading experience.
       </p>
     </div>
     <div class="col-sm-6" style="margin-bottom:50px;">
       <p>
-        Explore the land of the Bible and show events on a map for each book of the Bible.
+        Explore the land of the Bible and show events on a map.
       </p>
     </div>
   </div>
   <div class="row">
     <div class="col-sm-12">
-      <h2>Built by Developers, for Developers</h2>
+      <h2>Crafted by developers from GitHub.</h2>
     </div>
   </div>
   <div class="row">
@@ -56,7 +65,7 @@
     <div class="col-sm-6" style="padding-bottom:50px">
       <h2 style="margin-bottom:50px">About</h2>
       <p>
-        Open Bible was designed by <a href="http://jontayesp.github.io">Jonathan Esposito</a>.
+        Open Bible is designed by <a href="http://jontayesp.github.io">Jonathan Esposito</a>.
       </p>
     </div>
     <div class="col-sm-6" style="padding-bottom:50px">

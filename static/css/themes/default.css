@@ -5,7 +5,7 @@
   margin-top: 100px;
   padding-top: 0px;
   z-index:0;
-  font-size: 20px;
+  font-size: 21px;
 }
 
 @media (max-width:748px) {
@@ -25,10 +25,10 @@
 }
 
 .book title {
-  display: none;
-  margin-bottom:10px;
+  xdisplay: none;
+  xmargin-bottom:10px;
   xfont-size:.75em;
-  font-weight:400;
+  xfont-weight:400;
   xcolor:#b58900;
   xfont-style:italic;
 }

@@ -3,6 +3,7 @@ html, body {
 	font-family:"Noto Serif";
 	color:rgba(0,0,0,.87);
 	font-size:21px;
+	background:#fff;
 }
 
 a, a:hover {
@@ -15,18 +16,19 @@ h2 {
 	color:rgba(0,0,0,.8);
 	margin-top:0px;
 	font-weight:700;
-	font-size:40px;
+	font-size:28px;
 	margin-bottom:50px;
 }
 
 p  {
 	xcolor:rgba(0,0,0,.87);
 	line-height:1.5em;
-	font-size:24px;
+	font-size:21px;
 	margin-bottom:0px;
+	color:#002b36;
 }
 
-.container, .jumbotron .container {
+.book .container, .jumbotron .container {
 	max-width: 750px;
 }
 
@@ -34,11 +36,12 @@ p  {
 	background:#fff;
 	padding-left:0px;
 	padding-right:0px;
-	margin-top:50px;
-	margin-bottom:50px;
-	padding-top:0px;
+	padding-top:50px;
 	padding-bottom:0px;
-	text-align:left;
+	margin-bottom:50px;
+	xpadding-top:0px;
+	xpadding-bottom:0px;
+	text-align:center;
 	border-style:solid;
 	border-color:#424242;
 	border-width:0px 0px 0px 0px;
@@ -49,7 +52,9 @@ p  {
 	font-weight:700;
 	margin:0px;
 	padding:0px;
-	font-size:60px;
+	font-size:45px;
+	line-height:1.1em;
+	letter-spacing:1px;
 }
 
 .book-title {
@@ -109,8 +114,8 @@ p  {
 }
 
 .active, .active:hover {
-	color:#586e75;
-	background:#eee8d5;
+	color:#fff;
+	background:#586e75;
 	border-style:solid;
 	border-color:rgba(0,0,0,.8);
 	border-width:0px 0px 0px 0px;
