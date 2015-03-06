@@ -2,25 +2,28 @@ html, body {
 	-webkit-font-smoothing: subpixel-antialiased;
 	font-family:"Noto Serif";
 	color:rgba(0,0,0,.87);
-	font-size:20px;
+	font-size:21px;
 }
 
 a, a:hover {
-	color:#cb4b16;
+	color:#268bd2;
 	font-weight:bold;
 	text-decoration:underline;
 }
 
 h2 {
-	color:#073642;
-	margin-top:0px;
+	color:rgba(0,0,0,.8);
+	margin-top:25px;
 	font-weight:700;
-	xfont-size:36px;
+	font-size:40px;
+	margin-bottom:50px;
+	text-align:center;
 }
 
 p  {
-	color:rgba(0,0,0,.87);
+	color:rgba(0,0,0,.9);
 	line-height:1.5em;
+	font-size:22px;
 }
 
 .container, .jumbotron .container {
@@ -28,17 +31,23 @@ p  {
 }
 
 .jumbotron {
-	background:#fff;
+	background:#212121;
 	padding-left:0px;
 	padding-right:0px;
+	padding-top:75px;
+	padding-bottom:75px;
 	text-align:center;
+	border-style:solid;
+	border-color:#424242;
+	border-width:0px 0px 0px 0px;
 }
 
 .jumbotron .h1, .jumbotron h1 {
-	color:#073642;
+	color:#fff;
 	font-weight:700;
 	margin-top:0px;
 	padding-top:0px;
+	font-size:65px;
 }
 
 .book-title {
@@ -47,7 +56,6 @@ p  {
 	line-height:20px;
 	padding-top:15px;
 	padding-bottom:15px;
-	color:#073642;
 	font-weight:700;
 	letter-spacing:3px;
 }
@@ -57,7 +65,7 @@ p  {
 }
 
 .navbar-default {
-	background:rgba(255	,255,255,.75);
+	background:rgba(255	,255,255, .75);
 	border-style:none;
 	border-radius:0px;
 }
@@ -72,18 +80,19 @@ p  {
 	padding-bottom:15px;
 	line-height:20px;
 	font-size:20px;
-	color: #073642;
+	text-decoration:none;
 	margin-bottom:-1px; /* FIXME */
 }
 
 .navbar-item:hover{
-	color:#cb4b16;
+	color:#268bd2;
 	background:none;
 }
 
 .navbar-item-left {
-	margin-right:30px;
+	xmargin-right:30px;
 	float:left;
+	width:50px;
 }
 
 .navbar-item-right {
@@ -92,14 +101,14 @@ p  {
 }
 
 .active, .active:hover {
-	color:#cb4b16;
+	background:#424242;
 	border-style:solid;
-	border-color:#2aa198;
+	border-color:rgba(0,0,0,.8);
 	border-width:0px 0px 0px 0px;
 }
 
 .active:hover, .navbar-item:hover {
-	color:#cb4b16;
+	color:auto;
 }
 
 .aside {
