@@ -3,62 +3,53 @@ html, body {
 	font-family:"Noto Serif";
 	color:rgba(0,0,0,.87);
 	font-size:21px;
-	background:#fff;
 }
 
 a, a:hover {
-	color:#268bd2;
+	color:#b58900;
 	font-weight:bold;
 	text-decoration:underline;
 }
 
-h2 {
-	color:rgba(0,0,0,.8);
-	margin-top:0px;
-	font-weight:700;
-	font-size:28px;
-	margin-bottom:50px;
-}
-
 p  {
-	xcolor:rgba(0,0,0,.87);
 	line-height:1.5em;
-	font-size:21px;
 	margin-bottom:0px;
-	color:#002b36;
+	text-align:center;
 }
 
-.book .container, .jumbotron .container {
+.container, .jumbotron .container {
 	max-width: 750px;
 }
 
 .jumbotron {
-	background:#fff;
-	padding-left:0px;
-	padding-right:0px;
-	padding-top:50px;
-	padding-bottom:0px;
-	margin-bottom:50px;
-	xpadding-top:0px;
-	xpadding-bottom:0px;
+	background:#002b36;
 	text-align:center;
-	border-style:solid;
-	border-color:#424242;
-	border-width:0px 0px 0px 0px;
 }
 
-.jumbotron .h1, .jumbotron h1 {
-	color:#073642;
+.jumbotron h1 {
+	color:#fff;
+	font-size:75px;
 	font-weight:700;
-	margin:0px;
-	padding:0px;
-	font-size:45px;
-	line-height:1.1em;
-	letter-spacing:1px;
+	margin-top:0px;
+}
+
+.jumbotron .lead {
+	font-size:50px;
+	font-weight:700;
+	margin-top:25px;
+	line-height:1.15em;
+	color:#fff;
+}
+
+h2 {
+	margin-top:0px;
+	font-weight:700;
+	font-size:31px;
+	margin-bottom:50px;
 }
 
 .book-title {
-	color:#586e75;
+	color:#b58900;
 	text-align:center;
 	font-size:21px;
 	line-height:20px;
@@ -73,13 +64,13 @@ p  {
 }
 
 .navbar-default {
-	background:rgba(255	,255,255, .9);
+	background:rgba(255	,255,255,1);
 	border-style:none;
 	border-radius:0px;
 }
 
 .navbar-item {
-	color:#586e75;
+	color:#b58900;
 	position:relative;
 	display:block;
 	width:auto;
@@ -94,7 +85,7 @@ p  {
 }
 
 .navbar-item:hover{
-	color:#268bd2;
+	color:#b58900;
 	background:none;
 }
 
@@ -109,13 +100,10 @@ p  {
 	width:auto;
 }
 
-.navbar-item:hover {
-	color:#268bd2;
-}
 
 .active, .active:hover {
-	color:#fff;
-	background:#586e75;
+	xcolor:#fff;
+	background:#002b36;
 	border-style:solid;
 	border-color:rgba(0,0,0,.8);
 	border-width:0px 0px 0px 0px;
