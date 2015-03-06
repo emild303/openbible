@@ -6,7 +6,7 @@ html, body {
 }
 
 a, a:hover {
-	color:#b58900;
+	color:#073642;
 	font-weight:bold;
 	text-decoration:underline;
 }
@@ -44,12 +44,11 @@ p  {
 h2 {
 	margin-top:0px;
 	font-weight:700;
-	font-size:31px;
+	font-size:36px;
 	margin-bottom:50px;
 }
 
 .book-title {
-	color:#b58900;
 	text-align:center;
 	font-size:21px;
 	line-height:20px;
@@ -64,13 +63,13 @@ h2 {
 }
 
 .navbar-default {
-	background:rgba(255	,255,255,1);
+	background:rgba(255	,255,255,.75);
 	border-style:none;
 	border-radius:0px;
 }
 
 .navbar-item {
-	color:#b58900;
+	xcolor:#268bd2;
 	position:relative;
 	display:block;
 	width:auto;
@@ -85,7 +84,7 @@ h2 {
 }
 
 .navbar-item:hover{
-	color:#b58900;
+	color:default;
 	background:none;
 }
 
@@ -102,7 +101,7 @@ h2 {
 
 
 .active, .active:hover {
-	xcolor:#fff;
+	color:#fff;
 	background:#002b36;
 	border-style:solid;
 	border-color:rgba(0,0,0,.8);
