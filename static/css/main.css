@@ -22,7 +22,7 @@ p  {
 }
 
 .jumbotron {
-	background:#002b36;
+	background:#212121;
 	text-align:center;
 }
 
@@ -38,24 +38,15 @@ p  {
 	font-weight:700;
 	margin-top:25px;
 	line-height:1.15em;
-	color:#fff;
+	color:#93a1a1;
 }
 
 h2 {
+	color:#586e75;
 	margin-top:0px;
 	font-weight:700;
 	font-size:36px;
 	margin-bottom:50px;
-}
-
-.book-title {
-	text-align:center;
-	font-size:21px;
-	line-height:20px;
-	padding-top:15px;
-	padding-bottom:15px;
-	font-weight:700;
-	letter-spacing:3px;
 }
 
 .navbar {
@@ -66,6 +57,16 @@ h2 {
 	background:rgba(255	,255,255,.75);
 	border-style:none;
 	border-radius:0px;
+}
+
+.book-title {
+	text-align:center;
+	font-size:21px;
+	line-height:20px;
+	padding-top:15px;
+	padding-bottom:15px;
+	font-weight:700;
+	letter-spacing:3px;
 }
 
 .navbar-item {
@@ -102,7 +103,7 @@ h2 {
 
 .active, .active:hover {
 	color:#fff;
-	background:#002b36;
+	background:#212121;
 	border-style:solid;
 	border-color:rgba(0,0,0,.8);
 	border-width:0px 0px 0px 0px;
