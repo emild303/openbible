@@ -1,23 +1,13 @@
 <header headroom tolerance="5" offset="50" classes='{"initial":"animated","pinned":"slideDown","unpinned":"slideUp","top":"headroom--top","notTop":"headroom--not-top"}' class="navbar navbar-default navbar-fixed-top">
   <div class="container">
+    <a class="navbar-item navbar-item-left" href="#/book" xng-class="{active: page=='book'}">
+      <span class="glyphicon glyphicon-menu-hamburger" style="color:#b58900"></span>
+    </a>
+
     <div style="left:0px;right:0px;position:absolute">
       <div class="book-title">
-        <a href="#" style="text-decoration:none;xcolor:#586e75">{{book.title|uppercase}}</a>
+        <a href="#" style="text-decoration:none;xcolor:#cb4b16">{{book.title|uppercase}}</a>
       </div>
     </div>
-
-
-    <a class="navbar-item navbar-item-left" href="#/book" ng-class="{active: page=='book'}">
-      <span class="glyphicon glyphicon-book"></span>
-    </a>
-
-
-    <a class="navbar-item navbar-item-left" href="#/map" ng-class="{active: page=='map'}">
-      <span class="glyphicon glyphicon-globe"></span>
-    </a>
-
-    <a class="navbar-item navbar-item-right" href="javascript:void(0)">
-      <span class="glyphicon glyphicon-cog"></span>
-    </a>
   </div>
 </header>

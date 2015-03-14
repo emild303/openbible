@@ -1,65 +1,52 @@
-<header headroom tolerance="5" offset="50" classes='{"initial":"animated","pinned":"slideDown","unpinned":"slideUp","top":"headroom--top","notTop":"headroom--not-top"}' class="navbar navbar-default xnavbar-fixed-top" ng-init="page=null;" xstyle="background:#002b36">
+<header headroom tolerance="5" offset="50" classes='{"initial":"animated","pinned":"slideDown","unpinned":"slideUp","top":"headroom--top","notTop":"headroom--not-top"}' class="navbar navbar-default xnavbar-fixed-top">
   <div class="container">
+    <a class="navbar-item navbar-item-left" href="#/book" xng-class="{active: page=='book'}">
+      <span class="glyphicon glyphicon-menu-hamburger" style="color:#b58900"></span>
+    </a>
+
     <div style="left:0px;right:0px;position:absolute">
       <div class="book-title">
-        <a href="#" style="text-decoration:none;xcolor:#268bd2">START READING</a>
+        <a href="#/book" style="text-decoration:none;color:rgba(0,0,0,.87);font-weight:700">OPEN BIBLE</a>
       </div>
     </div>
-
-
-    <a class="navbar-item navbar-item-left" href="#/book" ng-class="{active: page=='book'}">
-      <span class="glyphicon glyphicon-book"></span>
-    </a>
-
-
-    <a class="navbar-item navbar-item-left" href="#/map" ng-class="{active: page=='map'}">
-      <span class="glyphicon glyphicon-globe"></span>
-    </a>
-
-    <a class="navbar-item navbar-item-right" href="javascript:void(0)">
-      <span class="glyphicon glyphicon-cog"></span>
-    </a>
   </div>
 </header>
 
-
 <div class="jumbotron">
   <div class="container">
-    <h1>Open Bible</h1>
-    <div class="lead">A modern app designed for reading and exploring the Bible.</div>
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>A modern Bible designed for reading and exploring.</h1>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="container" style="text-align:center;margin-top:50px;margin-bottom:50px">
+<div class="container" style="text-align:center;xmargin-top:25px;margin-bottom:50px">
   <div class="row">
-    <div class="row">
-      <div class="col-sm-12">
-        <h2>A Bible for the 21st century.</h2>
-      </div>
-    </div>
+
     <div class="col-sm-6" style="margin-bottom:50px;">
+      <p style="text-align:center;color:#586e75;font-family:'Noto Sans'"><strong>Read</strong></p>
       <p>
         Open Bible was built to read like a book. Choose a theme to match your lighting and enjoy longform reading without hurting your eyes. The typography was carefully selected to provide the optimal reading experience.
       </p>
     </div>
     <div class="col-sm-6" style="margin-bottom:50px;">
+      <p style="text-align:center;color:#586e75;font-family:'Noto Sans'"><strong>Explore</strong></p>
       <p>
         Explore the land of the Bible and show events on a map.
       </p>
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-12">
-      <h2>Crafted by developers.</h2>
-    </div>
-  </div>
-  <div class="row">
     <div class="col-sm-6" style="margin-bottom:50px;">
+      <p style="text-align:center;color:#586e75;font-family:'Noto Sans'"><strong>Open Source</strong></p>
       <p>
         Built on the modules provided by Sword Project.
       </p>
     </div>
     <div class="col-sm-6" style="margin-bottom:50px;">
+      <p style="text-align:center;color:#586e75;font-family:'Noto Sans'"><strong>Contribute</strong></p>
       <p>
         Open Bible is open source, which means you can take a look under the hood and contribute.
       </p>
@@ -67,24 +54,16 @@
   </div>
   <div class="row">
     <div class="col-sm-6" style="padding-bottom:50px">
-      <h2 style="margin-bottom:50px">About</h2>
+      <p style="text-align:center;color:#586e75;font-family:'Noto Sans'"><strong>Help</strong></p>
       <p>
         Open Bible is designed by <a href="http://jontayesp.github.io">Jonathan Esposito</a>.
       </p>
     </div>
     <div class="col-sm-6" style="padding-bottom:50px">
-      <h2 style="margin-bottom:50px;">Help</h2>
+      <p style="text-align:center;color:#586e75;font-family:'Noto Sans'"><strong>About</strong></p>
       <p>
         Contribute with <a href="http://github.com/openbible/openbible">GitHub</a> or support with <a href="http://gratipay.com/jontayesp">Gratipay</a>. Thanks!
       </p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12" style="padding-top:50px">
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://openbible.io" data-text="Open Bible: An open Bible designed for reading." data-via="openbibleapp" data-size="large" data-hashtags="openbible">Tweet</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-      <a href="https://twitter.com/openbibleapp" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @openbibleapp</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     </div>
   </div>
 </div>

@@ -6,15 +6,16 @@ html, body {
 }
 
 a, a:hover {
-	color:#073642;
+	color:#b58900;
 	font-weight:bold;
-	text-decoration:underline;
+	xtext-decoration:underline;
 }
 
 p  {
+	font-size:21px;
 	line-height:1.5em;
 	margin-bottom:0px;
-	text-align:center;
+	text-align:left;
 }
 
 .container, .jumbotron .container {
@@ -22,13 +23,16 @@ p  {
 }
 
 .jumbotron {
-	background:#073642;
+	background:#fff;
 	text-align:center;
+	padding-top:50px;
+	padding-bottom:50px;
+	margin-bottom:0px;
 }
 
 .jumbotron h1 {
-	color:#fff;
-	font-size:75px;
+	color:rgba(0,0,0,.87);
+	font-size:50px;
 	font-weight:700;
 	margin-top:0px;
 }
@@ -36,16 +40,16 @@ p  {
 .jumbotron .lead {
 	font-size:50px;
 	font-weight:700;
-	margin-top:25px;
+	xmargin-top:25px;
 	line-height:1.15em;
-	color:#93a1a1;
+	color:rgba(0,0,0,.87);
 }
 
 h2 {
-	color:#586e75;
+	color:#073642;
 	margin-top:0px;
 	font-weight:700;
-	font-size:36px;
+	font-size:40px;
 	margin-bottom:50px;
 }
 
@@ -60,6 +64,7 @@ h2 {
 }
 
 .book-title {
+	color:#073642;
 	text-align:center;
 	font-size:21px;
 	line-height:20px;
@@ -90,9 +95,9 @@ h2 {
 }
 
 .navbar-item-left {
-	xmargin-right:30px;
+	margin-right:30px;
 	float:left;
-	width:50px;
+	xwidth:50px;
 }
 
 .navbar-item-right {
