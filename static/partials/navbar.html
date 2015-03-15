@@ -1,13 +1,11 @@
-<header headroom tolerance="5" offset="50" classes='{"initial":"animated","pinned":"slideDown","unpinned":"slideUp","top":"headroom--top","notTop":"headroom--not-top"}' class="navbar navbar-default navbar-fixed-top">
+<header class="navbar navbar-default navbar-fixed-top">
   <div class="container">
-    <a class="navbar-item navbar-item-left" href="#/book" xng-class="{active: page=='book'}">
-      <span class="glyphicon glyphicon-menu-hamburger" style="color:#b58900"></span>
+    <a class="navbar-item pull-left" href="#/book">
+      <span class="glyphicon glyphicon-menu-hamburger"></span>
     </a>
 
-    <div style="left:0px;right:0px;position:absolute">
-      <div class="book-title">
-        {{book.title|uppercase}}
-      </div>
+    <div class="navbar-title">
+      {{book.title|uppercase}}
     </div>
   </div>
 </header>

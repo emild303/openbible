@@ -3,11 +3,11 @@ angular.module('app', ['infinite-scroll', 'ngAnimate', 'ngRoute', 'ngResource', 
 .config(function($routeProvider) {
   $routeProvider
     .when('/book', {
-      templateUrl:'/static/pages/book/book.html',
+      templateUrl:'/static/partials/book.html',
       controller:'BookCtrl',
     })
     .when('/map', {
-      templateUrl:'/static/pages/map/map.html',
+      templateUrl:'/static/partials/map.html',
       controller:'MapCtrl',
     })
     .when('/', {

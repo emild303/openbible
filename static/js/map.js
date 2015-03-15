@@ -12,7 +12,7 @@ angular.module('app').controller('MapCtrl', function($rootScope, $scope, $http) 
     if ($scope.layer != undefined) {
       $scope.map.removeLayer($scope.layer)
     }
-    $scope.layer = omnivore.kml('/static/pages/map/kml/' + $scope.book.title.toLowerCase() + '.kml')
+    $scope.layer = omnivore.kml('/static/kml/' + $scope.book.title.toLowerCase() + '.kml')
     .on('ready', function() {
       $scope.map.fitBounds($scope.layer.getBounds());
       $scope.layer.eachLayer(function(layer) {
