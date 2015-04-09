@@ -1,4 +1,4 @@
-angular.module('app', ['infinite-scroll', 'ngAnimate', 'ngRoute', 'ngResource', 'ngSanitize', 'mgcrea.ngStrap'/*, 'headroom'*/])
+angular.module('app', ['infinite-scroll', 'ngAnimate', 'ngRoute', 'ngResource', 'ngSanitize', 'mgcrea.ngStrap', 'headroom'])
 
 .config(function($routeProvider) {
   $routeProvider
@@ -10,9 +10,9 @@ angular.module('app', ['infinite-scroll', 'ngAnimate', 'ngRoute', 'ngResource', 
       templateUrl:'/static/partials/map.html',
       controller:'MapCtrl',
     })
-    .when('/', {
+    /*.when('/', {
       templateUrl:'/static/partials/land.html'
-    })
+    })*/
     .otherwise({redirectTo: '/book'});
 })
 
@@ -145,6 +145,7 @@ angular.module('app').controller('AppCtrl', function($document, $rootScope, $loc
     }
 
     $rootScope.$broadcast('reset');
+    slideout.toggle()
     document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
 

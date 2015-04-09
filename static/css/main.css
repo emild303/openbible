@@ -3,6 +3,8 @@ html, body {
 	color:rgba(0,0,0,.87);
 	font-family:"Noto Serif";
 	font-size:21px;
+	width: 100%;
+	height: 100%;
 }
 
 a, a:hover {
@@ -52,13 +54,20 @@ h5 {
 /* navbar */
 
 .navbar-default {
-	background:rgba(255	,255,255,.75);
+	background:rgba(255	,255,255,.9);
 	border-radius:0px;
 	border-style:none;
 }
 
+.navbar-default .navbar-brand {
+	xcolor:#b58900;
+	font-size:25px;
+	font-weight:700;
+	xletter-spacing:1px;
+}
+
 .navbar-title {
-	color:#586e75;
+	color:#424242;
 	font-size:21px;
 	font-weight:700;
 	letter-spacing:2px;
@@ -73,4 +82,34 @@ h5 {
 	line-height:50px;
 	position:absolute;
 	width:auto;
+}
+
+/* slideout */
+
+.slideout-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 256px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
 }

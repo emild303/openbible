@@ -12,7 +12,7 @@ app = flask.Flask(__name__)
 
 @app.route('/')
 def root():
-  return flask.render_template('main.html')
+  return app.send_static_file('main.html')
 
 
 @app.route('/proxy', methods=['POST'])

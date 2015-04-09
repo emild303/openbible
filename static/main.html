@@ -26,10 +26,8 @@
 
     <script src='/static/components/ngInfiniteScroll/build/ng-infinite-scroll.min.js'></script>
 
-    <!--
     <script src='/static/vendor/headroom/headroom.js'></script>
     <link rel='stylesheet' href='/static/css/animations.css'>
-    -->
 
     <script src='/static/js/app.js'></script>
     <script src='/static/js/book.js'></script>
@@ -44,6 +42,35 @@
   </head>
 
   <body ng-app='app' ng-controller='AppCtrl'>
-    <div class="ng-view"></div>
+    <nav id="menu" style="z-index:0;background:#fafafa">
+      <a href="javascript:void(0)" ng-click="setBook(b)" ng-repeat="b in books" style="text-align:center;display:block;padding-top:10px;font-size:25px;font-weight:700;color:#777">
+        {{b.title}}
+      </a>
+    </nav>
+
+    <main id="panel" style="background:#fff;z-index:99999">
+      <header xheadroom tolerance="5" offset="50" classes='{"initial":"animated","pinned":"slideDown","unpinned":"slideUp","top":"headroom--top","notTop":"headroom--not-top"}' class="navbar navbar-default navbar-fixed-top" style="top:0px;margin-top:0px;padding-top:0px">
+        <div class="container">
+          <div class="navbar-header pull-left">
+            <a class="navbar-brand" href="javascript:slideout.toggle()">{{book.title}}</a>
+          </div>
+
+          <div class="navbar-header pull-right">
+            <a class="navbar-brand" href="javascript:slideout.toggle()"><span class="glyphicon glyphicon-cog"></span></a>
+          </div>
+        </div>
+      </header>
+      <div class="ng-view"></div>
+    </main>
   </body>
+  <script src="/static/components/slideout/dist/slideout.min.js"></script>
+  <script>
+    var slideout = new Slideout({
+      'panel': document.getElementById('panel'),
+      'menu': document.getElementById('menu'),
+      'padding': 256,
+      'tolerance': 70,
+      'duration': 300
+    });
+  </script>
 </html>
