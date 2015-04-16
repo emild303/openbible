@@ -16,7 +16,7 @@ a {
 .book {
   line-height: 1.5em;
   font-weight: 400;
-  margin-top: 25px;
+  margin-top: 40px;
   padding-top: 0px;
 	padding-left:15px;
 	padding-right:15px;
@@ -33,13 +33,7 @@ a {
 
 .book .chapter {
   display: none;
-	position:absolute;
-  width:-30px;
-  left:0px;
-	color:red;
-	text-align:center;
-  xfont-size:25px;
-  color:#fff;
+  width:30px;
 	z-index:9999;
 }
 
@@ -79,8 +73,8 @@ a {
 
 .book-title {
 	xdisplay:none;
-	font-size:1em;
-	margin-bottom:50px;
+	font-size:1.5em;
+	margin-bottom:40px;
 	letter-spacing:5px;
 	font-weight:700;
 	color:rgba(0,0,0,.54);
