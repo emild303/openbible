@@ -137,16 +137,18 @@ angular.module('app').controller('AppCtrl', function($document, $rootScope, $loc
 
   $rootScope.setBook = function(book) {
 
-    $rootScope.book = book;
-    $rootScope.chapter = 1;
+    if ($rootScope.book != book) {
+      $rootScope.book = book;
+      $rootScope.chapter = 1;
 
-    if ($location.path() == '/') {
-      $location.path('/book')
+      if ($location.path() == '/') {
+        $location.path('/book')
+      }
+
+      $rootScope.$broadcast('reset');
+      document.body.scrollTop = document.documentElement.scrollTop = 0;
     }
-
-    $rootScope.$broadcast('reset');
     slideout.toggle()
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
 
   $rootScope.setChapter = function(chapter) {
