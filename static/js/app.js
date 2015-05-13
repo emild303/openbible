@@ -1,4 +1,4 @@
-angular.module('app', ['infinite-scroll', 'ngAnimate', 'ngRoute', 'ngResource', 'ngSanitize'])
+angular.module('app', ['infinite-scroll', 'ngAnimate', 'ngRoute', 'ngResource', 'ngSanitize', 'headroom'])
 
 .config(function($routeProvider) {
   $routeProvider
@@ -148,7 +148,8 @@ angular.module('app').controller('AppCtrl', function($document, $rootScope, $loc
       $rootScope.$broadcast('reset');
       document.body.scrollTop = document.documentElement.scrollTop = 0;
     }
-    slideout.toggle()
+
+    $('#collapse-books').collapse('hide')
   }
 
   $rootScope.setChapter = function(chapter) {

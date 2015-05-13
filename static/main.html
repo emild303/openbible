@@ -2,8 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="cleartype" content="on">
+
     <meta name="MobileOptimized" content="320">
     <meta name="HandheldFriendly" content="True">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -11,6 +13,7 @@
     <meta name="description" content="An open Bible designed for reading.">
     <meta name="keywords" content="slideout, offcanvas, javascript, menu, touch">
     <meta name="author" content="Mango">
+
     <meta property="twitter:card" content="summary">
     <meta property="twitter:site" content="@openbibleapp">
     <meta property="twitter:title" content="OpenBible">
@@ -20,77 +23,161 @@
 
     <title>Open Bible</title>
 
-    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-rc.0/angular.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-rc.0/angular.js'></script>
     <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-rc.0/angular-animate.min.js'></script>
     <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-rc.0/angular-resource.min.js'></script>
     <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-rc.0/angular-route.min.js'></script>
     <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-rc.0/angular-sanitize.min.js'></script>
 
-    <!--
-    <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'></script>
-    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet' />
-    -->
+    <script src='https://raw.githubusercontent.com/BinaryMuse/ngInfiniteScroll/1.0.0/build/ng-infinite-scroll.min.js'></script>
 
-    <script src='/static/components/ngInfiniteScroll/build/ng-infinite-scroll.min.js'></script>
-    <script src='/static/components/slideout/dist/slideout.js'></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/headroom.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/angular.headroom.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700' rel='stylesheet' type='text/css'>
 
     <script src='/static/js/app.js'></script>
     <script src='/static/js/book.js'></script>
     <script src='/static/js/map.js'></script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-
     <link rel='stylesheet' href='/static/css/fonts.css'>
     <link rel='stylesheet' href='/static/css/main.css'>
-
-    <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='/static/css/animations.css'>
   </head>
 
   <body ng-app='app' ng-controller='AppCtrl'>
-    <a href="javascript:slideout.toggle()" class="menu-navbar">
-    </a>
 
-    <nav id="menu" class="menu" style="z-index:2">
-      <header class="menu-header">
-        <span class="menu-header-title">
-          <a href="#/">Open Bible</a>
-        </span>
-        <span class="menu-header-icon">
-          <a href="javascript:void(0)">
+    <headroom   tolerance='0' offset='0' classes='{"initial":"animated","pinned":"slideDown","unpinned":"slideUp","top":"headroom--top","notTop":"headroom--not-top"}' class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid" id="header">
+        <div class="navbar-header">
+          <a href="#collapse-books" type="button" class="navbar-brand" data-parent="#header" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-books">
+            {{book.title|uppercase}}
+          </a>
+
+          <a href="#collapse-configure" type="button" class="navbar-brand pull-right" data-parent="#header" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-configure">
             <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
           </a>
-        </span>
-      </header>
 
-      <section class="menu-section">
-        <h3 class="menu-section-title">Old Testament</h3>
-        <ul class="menu-section-list">
-          <li ng-repeat="b in books|limitTo:39">
-            <a href="javascript:void(0)" ng-class="{'active': b == book}" ng-click="setBook(b)">{{b.title}}</a>
-          </li>
-        </ul>
-      </section>
+        </div>
 
-      <section class="menu-section">
-        <h3 class="menu-section-title">New Testament</h3>
-        <ul class="menu-section-list">
-          <li ng-repeat="b in books|limitTo:66:39">
-            <a href="javascript:void(0)" ng-class="{'active': b == book}" ng-click="setBook(b)">{{b.title}}</a>
-          </li>
-        </ul>
-      </section>
-    </nav>
+        <div class="collapse navbar-collapse" id="collapse-books" style="background:#424242;">
+          <ul class="nav navbar-nav" style="margin-top:0px;margin-bottom:0px;">
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(books[0])">Genesis</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(books[1])">Exodus</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(books[1])">Leviticus</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(books[1])">Numbers</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(books[1])">Deuteronomy</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(books[1])">Joshua</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(books[1])">Judges</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(b)">Ruth</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(b)">1 Samuel</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(b)">2 Samuel</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(b)">1 Kings</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(b)">2 Kings</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(b)">1 Chronicles</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(b)">2 Chronicles</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(b)">Esther</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(b)">Neheniah</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(b)">Nahum</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(b)">Numbers</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(b)">Numbers</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(b)">Numbers</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(b)">Numbers</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(b)">Numbers</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(b)">Numbers</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(b)">Numbers</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(b)">Numbers</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(b)">Numbers</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(b)">Numbers</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(b)">Numbers</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(b)">Numbers</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="collapse navbar-collapse" id="collapse-configure" style="background:#424242;">
+          <ul class="nav navbar-nav" style="margin-top:0px;margin-bottom:0px;">
+            <li style-"text-align:right">
+              <a href="javascript:void(0)" ng-click="setBook(b)" xstyle="text-align:right">Language</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" ng-click="setBook(b)" xstyle="text-align:right">Theme</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </headroom>
 
     <main id="panel" class="panel" style="z-index:3;">
       <center>
         <div class="book container" ng-controller="BookCtrl">
 
-          <div class="book-title">{{book.title|uppercase}}</div>
 
         	<div infinite-scroll='text.addPage()' infinite-scroll-disabled='text.busy' infinite-scroll-distance='1'>
         		<div ng-repeat='item in text.items' class="{{module.font}}" ng-class="{'text-right': module.text=='right'}">
-        			<span class="chapter" ng-if="item.chapter != 1">{{item.chapter}}</span>
+        			<span class="chapter" ng-if="item.chapter != 111">{{item.chapter}}</span>
         			<span class="text" ng-bind-html="item.text"></span>
         		</div>
         		<div class="loading" ng-show='text.busy'>
@@ -100,14 +187,5 @@
         </div>
       </center>
     </main>
-
-    <script>
-      var slideout = new Slideout({
-        'panel': document.getElementById('panel'),
-        'menu': document.getElementById('menu'),
-        'padding': 256,
-        'tolerance': 70
-      });
-    </script>
   </body>
 </html>
