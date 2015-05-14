@@ -48,11 +48,11 @@
 
   <body ng-app='app' ng-controller='AppCtrl'>
 
-    <div id="header" class="navbar navbar-default navbar-fixed-top">
-      <center>
+    <div id="header" class="navbar navbar-default navbar-fixed-top" style="background:none">
+      <center style="width:100%;background:rgba(255,255,255,.95)">
         <div class="navbar-header" style="max-width:750px">
           <a href="#collapse-books" type="button" class="navbar-brand" data-parent="#header" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-books">
-            {{book.title|uppercase}}
+            {{book.title}}
           </a>
 
           <a href="#collapse-configure" type="button" class="navbar-brand pull-right" data-parent="#header" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-configure">
@@ -60,7 +60,7 @@
           </a>
         </div>
 
-        <div class="collapse navbar-collapse" id="collapse-books" style="background:#424242;">
+        <div class="collapse navbar-collapse" id="collapse-books" style="background:#cb4b16;">
           <ul class="nav navbar-nav" style="margin-top:0px;margin-bottom:0px;">
             <li ng-repeat="b in books">
               <a href="javascript:void(0)" ng-click="setBook(b)">{{b.title}}</a>
@@ -68,7 +68,7 @@
           </ul>
         </div>
 
-        <div class="collapse navbar-collapse" id="collapse-configure" style="background:#424242;">
+        <div class="collapse navbar-collapse" id="collapse-configure" style="background:#cb4b16">
           <ul class="nav navbar-nav" style="margin-top:0px;margin-bottom:0px;">
             <li style-"text-align:right">
               <a href="javascript:void(0)" ng-click="setBook(b)" xstyle="text-align:right">Language</a>

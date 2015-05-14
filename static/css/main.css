@@ -12,24 +12,23 @@ a {
 
 /* navbar */
 
-.navbar-brand {
-	display:block;
-	position:relative;
-}
 
 .navbar-default {
 	border-style:none;
 }
 
 .navbar-default .navbar-brand {
-	letter-spacing:2px;
+	xletter-spacing:2px;
 	font-weight:700;
 	xcolor:#fff;
+	color:#cb4b16;
+	font-size:21px;
 }
 
 .navbar-default .navbar-nav>li>a {
 	xcolor:#fff;
-	font-size:18px;
+	font-size:21px;
+	font-weight:700;
 	padding-top:12px;
 	padding-bottom:12px;
 }
@@ -40,12 +39,14 @@ a {
 
 .navbar-default .navbar-nav>li>a {
 	color:#fff;
+	max-width:750px;
+	text-align:left;
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover
 {
-	background-color:#757575;
-	color:#fff;
+	background-color:#fff;
+	color:#cb4b16;
 }
 
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
@@ -57,7 +58,7 @@ a {
 .book {
   line-height: 1.5em;
   font-weight: 400;
-  margin-top: 65px;
+  margin-top: 55px;
   padding-top: 0px;
 	padding-left:15px;
 	padding-right:15px;
@@ -117,7 +118,7 @@ a {
 	font-weight:700;
 	font-family:'Noto Sans';
 	font-size:.75em;
-	color:rgba(0,0,0,.54);
+	color:#657b83;
 }
 
 .book-title {
