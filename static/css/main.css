@@ -12,28 +12,9 @@ a {
 
 /* navbar */
 
-@media (min-width: 768px) {
-  .navbar-collapse {
-    width: auto;
-    border-top: 0;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  .navbar-collapse.collapse {
-    display: block !important;
-    height: auto !important;
-    padding-bottom: 0;
-    overflow: visible !important;
-  }
-  .navbar-collapse.in {
-    overflow-y: visible;
-  }
-  .navbar-fixed-top .navbar-collapse,
-  .navbar-static-top .navbar-collapse,
-  .navbar-fixed-bottom .navbar-collapse {
-    padding-right: 0;
-    padding-left: 0;
-  }
+.navbar-brand {
+	display:block;
+	position:relative;
 }
 
 .navbar-default {
@@ -49,6 +30,8 @@ a {
 .navbar-default .navbar-nav>li>a {
 	xcolor:#fff;
 	font-size:18px;
+	padding-top:12px;
+	padding-bottom:12px;
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
@@ -66,7 +49,7 @@ a {
 }
 
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
-	max-height:10%;
+	xmax-height:10%;
 }
 
 /* book */
