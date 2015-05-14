@@ -1,4 +1,4 @@
-angular.module('app', ['infinite-scroll', 'ngAnimate', 'ngRoute', 'ngResource', 'ngSanitize', 'headroom'])
+angular.module('app', ['infinite-scroll', 'ngAnimate', 'ngRoute', 'ngResource', 'ngSanitize'])
 
 .config(function($routeProvider) {
   $routeProvider

@@ -33,9 +33,6 @@
 
     <script src='https://raw.githubusercontent.com/BinaryMuse/ngInfiniteScroll/1.0.0/build/ng-infinite-scroll.min.js'></script>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/headroom.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/angular.headroom.min.js"></script>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
@@ -47,12 +44,11 @@
 
     <link rel='stylesheet' href='/static/css/fonts.css'>
     <link rel='stylesheet' href='/static/css/main.css'>
-    <link rel='stylesheet' href='/static/css/animations.css'>
   </head>
 
   <body ng-app='app' ng-controller='AppCtrl'>
 
-    <headroom   tolerance='0' offset='0' classes='{"initial":"animated","pinned":"slideDown","unpinned":"slideUp","top":"headroom--top","notTop":"headroom--not-top"}' class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid" id="header">
         <div class="navbar-header">
           <a href="#collapse-books" type="button" class="navbar-brand" data-parent="#header" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-books">
@@ -168,7 +164,7 @@
           </ul>
         </div>
       </div>
-    </headroom>
+    </div>
 
     <main id="panel" class="panel" style="z-index:3;">
       <center>
