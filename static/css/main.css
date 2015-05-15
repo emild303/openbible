@@ -38,7 +38,7 @@ a {
 }
 
 .navbar-default .navbar-nav>li>a {
-	color:#fff;
+	color:#424242;
 	max-width:750px;
 	text-align:left;
 }
@@ -46,7 +46,7 @@ a {
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover
 {
 	background-color:#fff;
-	color:#cb4b16;
+	color:#424242;
 }
 
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
@@ -130,4 +130,5 @@ a {
 	color:rgba(0,0,0,.54);
 	text-align:center;
 }
+
 
