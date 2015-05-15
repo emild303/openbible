@@ -21,7 +21,7 @@ a {
 	xletter-spacing:2px;
 	font-weight:700;
 	xcolor:#fff;
-	color:#cb4b16;
+	color:#268bd2    ;
 	font-size:21px;
 }
 
@@ -118,7 +118,7 @@ a {
 	font-weight:700;
 	font-family:'Noto Sans';
 	font-size:.75em;
-	color:#657b83;
+	color:#616161;
 }
 
 .book-title {
@@ -130,3 +130,4 @@ a {
 	color:rgba(0,0,0,.54);
 	text-align:center;
 }
+
